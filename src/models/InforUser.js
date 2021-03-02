@@ -16,7 +16,7 @@ class InforUser extends Model {
         }, {
             sequelize,
             modelName: 'InforUser',
-            // don't forget to enable timestamps!
+            // don't forget to enable timestamaaps!
             timestamps: false,
 
         })
