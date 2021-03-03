@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 
 module.exports = {
     async addUser(req, res,next) {
-        //await User.sync({ force: true });
+        await User.sync({ force: true });
         var userCreate = 0
         const body = req.body;
         var hashpassword = bcrypt.hashSync(body.senha, 10);
